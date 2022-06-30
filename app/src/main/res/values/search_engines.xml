@@ -19,8 +19,10 @@
         <item>Baidu</item>
         <item>Bing</item>
         <item>DuckDuckGo</item>
+        <item>Ecosia</item>
         <item>Google</item>
         <item>Google encrypted</item>
+        <item>Searx</item>
         <item>Yahoo</item>
         <item>Yandex</item>
     </string-array>
@@ -29,8 +31,10 @@
         <item>https://www.baidu.com/s?wd={searchTerms}</item>
         <item>https://www.bing.com/search?q={searchTerms}</item>
         <item>https://duckduckgo.com/?q={searchTerms}</item>
+        <item>https://www.ecosia.org/search?method=index&amp;q={searchTerms}</item>
         <item>https://google.com/search?ie=UTF-8&amp;source=android-browser&amp;q={searchTerms}</item>
         <item>https://encrypted.google.com/search?q={searchTerms}</item>
+        <item>https://searx.org/search?q={searchTerms}</item>
         <item>https://search.yahoo.com/p={searchTerms}</item>
         <item>https://yandex.com/?q={searchTerms}</item>
     </string-array>
