@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2017-2019 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
@@ -84,6 +84,8 @@
     <string name="suggestions_provider_none">Brez</string>
     <string name="search_bar_hint">Iskanje</string>
     <string name="ssl_cert_dialog_title">Podrobnosti potrdila SSL</string>
+    <string name="ssl_cert_dialog_trust">Trust</string>
+    <string name="ssl_cert_dialog_trusted">Povezava je varna</string>
     <string name="ssl_cert_dialog_domain">Domena</string>
     <string name="ssl_cert_dialog_issued_to">Izdano za</string>
     <string name="ssl_cert_dialog_issued_by">Izdal</string>
@@ -94,6 +96,13 @@
     <string name="ssl_cert_dialog_issued_on">Izdano</string>
     <string name="ssl_cert_dialog_expires_on">Poteče</string>
     <string name="ssl_cert_dialog_dismiss">Opusti</string>
+    <string name="ssl_error_untrusted">To potrdilo ni od zaupanja vrednega vira.</string>
+    <string name="ssl_error_mismatch">Ime te strani se ne ujema z imenom na potrdilu.</string>
+    <string name="ssl_error_expired">To potrdilo je poteklo.</string>
+    <string name="ssl_error_not_yet_valid">To potrdilo še ni veljavno.</string>
+    <string name="ssl_error_date_invalid">To potrdilo ima neveljaven datum.</string>
+    <string name="ssl_error_invalid">To potrdilo je neveljavno.</string>
+    <string name="ssl_error_unknown">Neznana napaka potrdila.</string>
     <string name="location_dialog_title">Posreduj lokacijo?</string>
     <string name="location_dialog_message">%1$s želi uporabiti vašo geolokacijo.</string>
     <string name="location_dialog_allow">Dovoli</string>

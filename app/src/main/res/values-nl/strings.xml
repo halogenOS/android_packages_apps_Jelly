@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2017-2019 The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
@@ -84,6 +84,8 @@
     <string name="suggestions_provider_none">Geen</string>
     <string name="search_bar_hint">Zoeken</string>
     <string name="ssl_cert_dialog_title">SSL-certificaatinformatie</string>
+    <string name="ssl_cert_dialog_trust">Vertrouwen</string>
+    <string name="ssl_cert_dialog_trusted">Verbinding is veilig</string>
     <string name="ssl_cert_dialog_domain">Domein</string>
     <string name="ssl_cert_dialog_issued_to">Verleend aan</string>
     <string name="ssl_cert_dialog_issued_by">Verleend door</string>
@@ -94,6 +96,13 @@
     <string name="ssl_cert_dialog_issued_on">Verleend op</string>
     <string name="ssl_cert_dialog_expires_on">Verloopt op</string>
     <string name="ssl_cert_dialog_dismiss">Sluiten</string>
+    <string name="ssl_error_untrusted">Dit certificaat is niet afkomstig van een vertrouwde organisatie.</string>
+    <string name="ssl_error_mismatch">De naam van deze site komt niet overeen met de naam op het certificaat.</string>
+    <string name="ssl_error_expired">Dit certificaat is verlopen.</string>
+    <string name="ssl_error_not_yet_valid">Dit certificaat is nog niet geldig.</string>
+    <string name="ssl_error_date_invalid">Dit certificaat heeft een ongeldige datum.</string>
+    <string name="ssl_error_invalid">Dit certificaat is ongeldig.</string>
+    <string name="ssl_error_unknown">Onbekende certificaatfout.</string>
     <string name="location_dialog_title">Locatie aanbieden?</string>
     <string name="location_dialog_message">%1$s wil je geolocatie gebruiken.</string>
     <string name="location_dialog_allow">Sta toe</string>
