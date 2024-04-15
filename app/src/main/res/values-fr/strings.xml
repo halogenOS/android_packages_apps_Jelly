@@ -84,6 +84,8 @@
     <string name="suggestions_provider_none">Aucun</string>
     <string name="search_bar_hint">Rechercher</string>
     <string name="ssl_cert_dialog_title">Détails du certificat SSL</string>
+    <string name="ssl_cert_dialog_trust">Confiance</string>
+    <string name="ssl_cert_dialog_trusted">La connexion est sécurisée</string>
     <string name="ssl_cert_dialog_domain">Domaine</string>
     <string name="ssl_cert_dialog_issued_to">Délivré à</string>
     <string name="ssl_cert_dialog_issued_by">Délivré par</string>
@@ -94,6 +96,13 @@
     <string name="ssl_cert_dialog_issued_on">Délivré le</string>
     <string name="ssl_cert_dialog_expires_on">Expire le</string>
     <string name="ssl_cert_dialog_dismiss">Rejeter</string>
+    <string name="ssl_error_untrusted">Ce certificat ne provient pas d\'une autorité de confiance.</string>
+    <string name="ssl_error_mismatch">Le nom du site ne correspond pas au nom figurant sur le certificat.</string>
+    <string name="ssl_error_expired">Ce certificat a expiré.</string>
+    <string name="ssl_error_not_yet_valid">Ce certificat n\'est pas encore valide.</string>
+    <string name="ssl_error_date_invalid">Ce certificat a une date invalide.</string>
+    <string name="ssl_error_invalid">Ce certificat est invalide.</string>
+    <string name="ssl_error_unknown">Erreur de certificat inconnue.</string>
     <string name="location_dialog_title">Fournir la localisation ?</string>
     <string name="location_dialog_message">%1$s veut utiliser votre géolocalisation.</string>
     <string name="location_dialog_allow">Autoriser</string>

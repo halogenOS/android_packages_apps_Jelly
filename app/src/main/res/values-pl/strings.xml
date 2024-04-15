@@ -84,6 +84,8 @@
     <string name="suggestions_provider_none">Brak wyników</string>
     <string name="search_bar_hint">Wyszukaj</string>
     <string name="ssl_cert_dialog_title">Szczegóły Certyfikatu SSL</string>
+    <string name="ssl_cert_dialog_trust">Trust</string>
+    <string name="ssl_cert_dialog_trusted">Połączenie jest bezpieczne</string>
     <string name="ssl_cert_dialog_domain">Domena</string>
     <string name="ssl_cert_dialog_issued_to">Wydany dla</string>
     <string name="ssl_cert_dialog_issued_by">Wydany przez</string>
@@ -94,6 +96,13 @@
     <string name="ssl_cert_dialog_issued_on">Wydane na</string>
     <string name="ssl_cert_dialog_expires_on">Wygasa</string>
     <string name="ssl_cert_dialog_dismiss">Odrzuć</string>
+    <string name="ssl_error_untrusted">Ten certyfikat nie pochodzi z zaufanego źródła.</string>
+    <string name="ssl_error_mismatch">Nazwa witryny nie pokrywa się z nazwą na certyfikacie.</string>
+    <string name="ssl_error_expired">Ważność certyfikatu wygasła.</string>
+    <string name="ssl_error_not_yet_valid">Certyfikat nie jest jeszcze ważny.</string>
+    <string name="ssl_error_date_invalid">Certyfikat ma nieprawidłową datę.</string>
+    <string name="ssl_error_invalid">Certyfikat jest nieprawidłowy.</string>
+    <string name="ssl_error_unknown">Nieznany błąd certyfikatu.</string>
     <string name="location_dialog_title">Podać lokalizację?</string>
     <string name="location_dialog_message">%1$s chce używać twojej geolokalizacji.</string>
     <string name="location_dialog_allow">Zezwól</string>

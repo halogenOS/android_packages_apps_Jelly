@@ -84,6 +84,8 @@
     <string name="suggestions_provider_none">Cap</string>
     <string name="search_bar_hint">Cerca</string>
     <string name="ssl_cert_dialog_title">Detalls del certificat SSL</string>
+    <string name="ssl_cert_dialog_trust">Confia</string>
+    <string name="ssl_cert_dialog_trusted">La connexió és segura</string>
     <string name="ssl_cert_dialog_domain">Domini</string>
     <string name="ssl_cert_dialog_issued_to">Emès per a</string>
     <string name="ssl_cert_dialog_issued_by">Emès per</string>
@@ -94,6 +96,13 @@
     <string name="ssl_cert_dialog_issued_on">Emès el</string>
     <string name="ssl_cert_dialog_expires_on">Caduca el</string>
     <string name="ssl_cert_dialog_dismiss">Descarta</string>
+    <string name="ssl_error_untrusted">Aquest certificat no prové d\'una autoritat de confiança.</string>
+    <string name="ssl_error_mismatch">El nom del lloc no coincideix amb el nom del certificat.</string>
+    <string name="ssl_error_expired">Aquest certificat ha caducat.</string>
+    <string name="ssl_error_not_yet_valid">El certificat encara no és vàlid.</string>
+    <string name="ssl_error_date_invalid">El certificat té una data no vàlida.</string>
+    <string name="ssl_error_invalid">Aquest certificat no és vàlid.</string>
+    <string name="ssl_error_unknown">Error de certificat desconegut.</string>
     <string name="location_dialog_title">Voleu proporcionar la ubicació?</string>
     <string name="location_dialog_message">%1$s vol utilitzar la vostra posició geogràfica</string>
     <string name="location_dialog_allow">Permet</string>

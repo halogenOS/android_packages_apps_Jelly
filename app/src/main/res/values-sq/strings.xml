@@ -84,6 +84,8 @@
     <string name="suggestions_provider_none">Asnjë</string>
     <string name="search_bar_hint">Kërko</string>
     <string name="ssl_cert_dialog_title">Detaje të çertifikatës SSL</string>
+    <string name="ssl_cert_dialog_trust">Trust</string>
+    <string name="ssl_cert_dialog_trusted">Lidhja është e sigurt</string>
     <string name="ssl_cert_dialog_domain">Domain</string>
     <string name="ssl_cert_dialog_issued_to">Lëshuar për</string>
     <string name="ssl_cert_dialog_issued_by">Lëshuar nga</string>
@@ -94,6 +96,13 @@
     <string name="ssl_cert_dialog_issued_on">Lëshuar më</string>
     <string name="ssl_cert_dialog_expires_on">Skadon më</string>
     <string name="ssl_cert_dialog_dismiss">Anashkalo</string>
+    <string name="ssl_error_untrusted">Kjo certifikatë nuk vjen nga një autoritet i besuar.</string>
+    <string name="ssl_error_mismatch">Emri i faqes nuk përputhet me emrin në certifikatë.</string>
+    <string name="ssl_error_expired">Kjo certifikatë ka skaduar.</string>
+    <string name="ssl_error_not_yet_valid">Kjo certifikatë nuk është ende e vlefshme.</string>
+    <string name="ssl_error_date_invalid">Kjo certifikatë ka një datë të pavlefshme.</string>
+    <string name="ssl_error_invalid">Kjo certifikatë është e pavlefshme.</string>
+    <string name="ssl_error_unknown">Gabim i panjohur në certifikatë.</string>
     <string name="location_dialog_title">Jep vendndodhjen?</string>
     <string name="location_dialog_message">%1$s dëshiron të përdorë vendndodhjen tuaj gjeografike.</string>
     <string name="location_dialog_allow">Lejo</string>

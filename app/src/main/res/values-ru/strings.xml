@@ -84,6 +84,8 @@
     <string name="suggestions_provider_none">Не использовать</string>
     <string name="search_bar_hint">Поиск на странице</string>
     <string name="ssl_cert_dialog_title">Данные сертификата</string>
+    <string name="ssl_cert_dialog_trust">Trust</string>
+    <string name="ssl_cert_dialog_trusted">Соединение защищено</string>
     <string name="ssl_cert_dialog_domain">Домен</string>
     <string name="ssl_cert_dialog_issued_to">Выдан</string>
     <string name="ssl_cert_dialog_issued_by">Кем выдан</string>
@@ -94,6 +96,13 @@
     <string name="ssl_cert_dialog_issued_on">Дата выдачи</string>
     <string name="ssl_cert_dialog_expires_on">Срок действия</string>
     <string name="ssl_cert_dialog_dismiss">Закрыть</string>
+    <string name="ssl_error_untrusted">Этот сертификат выдан не доверенным центром.</string>
+    <string name="ssl_error_mismatch">Название сайта не соответствует названию в сертификате.</string>
+    <string name="ssl_error_expired">Срок действия этого сертификата истек.</string>
+    <string name="ssl_error_not_yet_valid">Этот сертификат пока недействителен.</string>
+    <string name="ssl_error_date_invalid">Этот сертификат имеет недопустимую дату.</string>
+    <string name="ssl_error_invalid">Этот сертификат недействителен.</string>
+    <string name="ssl_error_unknown">Неизвестная ошибка сертификата.</string>
     <string name="location_dialog_title">Указать местоположение?</string>
     <string name="location_dialog_message">%1$s хочет использовать вашу геолокацию.</string>
     <string name="location_dialog_allow">Разрешить</string>

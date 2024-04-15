@@ -84,6 +84,8 @@
     <string name="suggestions_provider_none">Không có</string>
     <string name="search_bar_hint">Tìm kiếm</string>
     <string name="ssl_cert_dialog_title">Chi tiết Chứng Chỉ SSL</string>
+    <string name="ssl_cert_dialog_trust">Trust</string>
+    <string name="ssl_cert_dialog_trusted">Kết nối được bảo mật</string>
     <string name="ssl_cert_dialog_domain">Tên miền</string>
     <string name="ssl_cert_dialog_issued_to">Cấp cho</string>
     <string name="ssl_cert_dialog_issued_by">Cấp bởi</string>
@@ -94,6 +96,13 @@
     <string name="ssl_cert_dialog_issued_on">Cấp vào</string>
     <string name="ssl_cert_dialog_expires_on">Hết hạn vào</string>
     <string name="ssl_cert_dialog_dismiss">Bỏ qua</string>
+    <string name="ssl_error_untrusted">Chứng chỉ này không đến từ một cơ quan đáng tin cậy.</string>
+    <string name="ssl_error_mismatch">Tên trang web không khớp với tên trên chứng chỉ.</string>
+    <string name="ssl_error_expired">Chứng chỉ này đã hết hạn.</string>
+    <string name="ssl_error_not_yet_valid">Chứng chỉ này chưa hợp lệ.</string>
+    <string name="ssl_error_date_invalid">Chứng chỉ này có ngày không hợp lệ.</string>
+    <string name="ssl_error_invalid">Chứng chỉ này không hợp lệ.</string>
+    <string name="ssl_error_unknown">Lỗi chứng chỉ không xác định.</string>
     <string name="location_dialog_title">Cung cấp vị trí?</string>
     <string name="location_dialog_message">%1$s muốn sử dụng vị trí địa lý của bạn.</string>
     <string name="location_dialog_allow">Cho phép</string>

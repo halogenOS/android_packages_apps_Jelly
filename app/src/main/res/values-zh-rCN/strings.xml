@@ -84,6 +84,8 @@
     <string name="suggestions_provider_none">无</string>
     <string name="search_bar_hint">搜索</string>
     <string name="ssl_cert_dialog_title">SSL 证书明细</string>
+    <string name="ssl_cert_dialog_trust">信任</string>
+    <string name="ssl_cert_dialog_trusted">连接是安全的</string>
     <string name="ssl_cert_dialog_domain">域名</string>
     <string name="ssl_cert_dialog_issued_to">颁发给：</string>
     <string name="ssl_cert_dialog_issued_by">颁发者：</string>
@@ -94,6 +96,13 @@
     <string name="ssl_cert_dialog_issued_on">颁发时间：</string>
     <string name="ssl_cert_dialog_expires_on">到期日期：</string>
     <string name="ssl_cert_dialog_dismiss">忽略</string>
+    <string name="ssl_error_untrusted">该证书不是来自可信任的证书颁发机构。</string>
+    <string name="ssl_error_mismatch">站点名称与证书名称不匹配。</string>
+    <string name="ssl_error_expired">该证书已过期。</string>
+    <string name="ssl_error_not_yet_valid">该证书尚未生效。</string>
+    <string name="ssl_error_date_invalid">该证书日期无效。</string>
+    <string name="ssl_error_invalid">该证书无效。</string>
+    <string name="ssl_error_unknown">未知证书错误。</string>
     <string name="location_dialog_title">提供位置？</string>
     <string name="location_dialog_message">%1$s 想要使用您的地理位置。</string>
     <string name="location_dialog_allow">允许</string>

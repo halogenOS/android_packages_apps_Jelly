@@ -84,6 +84,8 @@
     <string name="suggestions_provider_none">Žádné</string>
     <string name="search_bar_hint">Vyhledat</string>
     <string name="ssl_cert_dialog_title">Detaily certifikátu SSL</string>
+    <string name="ssl_cert_dialog_trust">Důvěřovat</string>
+    <string name="ssl_cert_dialog_trusted">Připojení je zabezpečné</string>
     <string name="ssl_cert_dialog_domain">Doména</string>
     <string name="ssl_cert_dialog_issued_to">Vydáno pro</string>
     <string name="ssl_cert_dialog_issued_by">Vydal</string>
@@ -94,6 +96,13 @@
     <string name="ssl_cert_dialog_issued_on">Vydáno</string>
     <string name="ssl_cert_dialog_expires_on">Platnost končí</string>
     <string name="ssl_cert_dialog_dismiss">Zamítnout</string>
+    <string name="ssl_error_untrusted">Tento certifikát nepochází z důvěryhodné autority.</string>
+    <string name="ssl_error_mismatch">Název webu se neshoduje s názvem uvedeným v certifikátu.</string>
+    <string name="ssl_error_expired">Platnost certifikátu vypršela.</string>
+    <string name="ssl_error_not_yet_valid">Tento certifikát zatím není platný.</string>
+    <string name="ssl_error_date_invalid">Tento certifikát má neplatné datum.</string>
+    <string name="ssl_error_invalid">Tento certifikát je neplatný.</string>
+    <string name="ssl_error_unknown">Neznámá chyba certifikátu.</string>
     <string name="location_dialog_title">Poskytnout polohu?</string>
     <string name="location_dialog_message">Aplikace %1$s chce použít vaši geolokaci.</string>
     <string name="location_dialog_allow">Povolit</string>

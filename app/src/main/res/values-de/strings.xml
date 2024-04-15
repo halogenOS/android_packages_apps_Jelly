@@ -84,6 +84,7 @@
     <string name="suggestions_provider_none">Keiner</string>
     <string name="search_bar_hint">Suchen</string>
     <string name="ssl_cert_dialog_title">SSL-Zertifikatdetails</string>
+    <string name="ssl_cert_dialog_trusted">Die Verbindung ist sicher</string>
     <string name="ssl_cert_dialog_domain">Domain</string>
     <string name="ssl_cert_dialog_issued_to">Ausgestellt für</string>
     <string name="ssl_cert_dialog_issued_by">Ausgestellt von</string>
@@ -94,6 +95,13 @@
     <string name="ssl_cert_dialog_issued_on">Ausgestellt am</string>
     <string name="ssl_cert_dialog_expires_on">Gültig bis</string>
     <string name="ssl_cert_dialog_dismiss">Verwerfen</string>
+    <string name="ssl_error_untrusted">Dieses Zertifikat stammt nicht aus einer vertrauenswürdigen Quelle.</string>
+    <string name="ssl_error_mismatch">Der Name der Webseite passt nicht zum Namen des Zertifikats.</string>
+    <string name="ssl_error_expired">Dieses Zertifikat ist abgelaufen.</string>
+    <string name="ssl_error_not_yet_valid">Dieses Zertifikat ist noch nicht gültig.</string>
+    <string name="ssl_error_date_invalid">Dieses Zertifikat hat ein ungültiges Datum.</string>
+    <string name="ssl_error_invalid">Dieses Zertifikat ist ungültig.</string>
+    <string name="ssl_error_unknown">Unbekannter Zertifikatsfehler.</string>
     <string name="location_dialog_title">Standort freigeben?</string>
     <string name="location_dialog_message">%1$s möchte Zugriff auf deine Standortdaten.</string>
     <string name="location_dialog_allow">Erlauben</string>

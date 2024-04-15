@@ -84,6 +84,8 @@
     <string name="suggestions_provider_none">なし</string>
     <string name="search_bar_hint">検索</string>
     <string name="ssl_cert_dialog_title">証明書の詳細</string>
+    <string name="ssl_cert_dialog_trust">信頼</string>
+    <string name="ssl_cert_dialog_trusted">接続は安全です</string>
     <string name="ssl_cert_dialog_domain">ドメイン</string>
     <string name="ssl_cert_dialog_issued_to">発行先</string>
     <string name="ssl_cert_dialog_issued_by">発行者</string>
@@ -94,6 +96,13 @@
     <string name="ssl_cert_dialog_issued_on">発行元</string>
     <string name="ssl_cert_dialog_expires_on">有効期限</string>
     <string name="ssl_cert_dialog_dismiss">閉じる</string>
+    <string name="ssl_error_untrusted">この証明書は信頼された機関からのものではありません。</string>
+    <string name="ssl_error_mismatch">サイトの名前が証明書の名前と一致していません。</string>
+    <string name="ssl_error_expired">この証明書は有効期限が切れています。</string>
+    <string name="ssl_error_not_yet_valid">この証明書はまだ有効ではありません。</string>
+    <string name="ssl_error_date_invalid">この証明書の日付は無効です。</string>
+    <string name="ssl_error_invalid">この証明書は無効です。</string>
+    <string name="ssl_error_unknown">不明な証明書エラーです。</string>
     <string name="location_dialog_title">位置情報を提供しますか？</string>
     <string name="location_dialog_message">%1$s が位置情報を使用しようとしています。</string>
     <string name="location_dialog_allow">許可</string>
