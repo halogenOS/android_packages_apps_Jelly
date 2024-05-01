@@ -84,6 +84,7 @@
     <string name="suggestions_provider_none">Keiner</string>
     <string name="search_bar_hint">Suchen</string>
     <string name="ssl_cert_dialog_title">SSL-Zertifikatdetails</string>
+    <string name="ssl_cert_dialog_trust">Trust</string>
     <string name="ssl_cert_dialog_trusted">Die Verbindung ist sicher</string>
     <string name="ssl_cert_dialog_domain">Domain</string>
     <string name="ssl_cert_dialog_issued_to">Ausgestellt für</string>

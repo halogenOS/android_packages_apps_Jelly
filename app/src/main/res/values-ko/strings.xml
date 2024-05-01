@@ -84,6 +84,8 @@
     <string name="suggestions_provider_none">없음</string>
     <string name="search_bar_hint">검색</string>
     <string name="ssl_cert_dialog_title">SSL 인증서 세부 정보</string>
+    <string name="ssl_cert_dialog_trust">신뢰</string>
+    <string name="ssl_cert_dialog_trusted">연결이 안전합니다</string>
     <string name="ssl_cert_dialog_domain">도메인</string>
     <string name="ssl_cert_dialog_issued_to">발급 대상</string>
     <string name="ssl_cert_dialog_issued_by">발급자</string>
@@ -94,6 +96,13 @@
     <string name="ssl_cert_dialog_issued_on">발급 날짜</string>
     <string name="ssl_cert_dialog_expires_on">만료 날짜</string>
     <string name="ssl_cert_dialog_dismiss">닫기</string>
+    <string name="ssl_error_untrusted">이 인증서는 신뢰할 수 있는 기관에서 발급되지 않았습니다.</string>
+    <string name="ssl_error_mismatch">사이트의 이름과 인증서 이름이 일치하지 않습니다.</string>
+    <string name="ssl_error_expired">이 인증서는 만료되었습니다.</string>
+    <string name="ssl_error_not_yet_valid">이 인증서는 아직 유효하지 않습니다.</string>
+    <string name="ssl_error_date_invalid">이 인증서의 날짜가 올바르지 않습니다.</string>
+    <string name="ssl_error_invalid">이 인증서는 유효하지 않습니다.</string>
+    <string name="ssl_error_unknown">알 수 없는 인증서 오류입니다.</string>
     <string name="location_dialog_title">위치 정보를 허용하시겠습니까?</string>
     <string name="location_dialog_message">%1$s에서 사용자의 위치를 사용하려고 합니다.</string>
     <string name="location_dialog_allow">허용</string>

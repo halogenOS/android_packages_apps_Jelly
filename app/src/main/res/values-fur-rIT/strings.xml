@@ -84,6 +84,8 @@
     <string name="suggestions_provider_none">Nissun</string>
     <string name="search_bar_hint">Cîr</string>
     <string name="ssl_cert_dialog_title">Detais certificât SSL</string>
+    <string name="ssl_cert_dialog_trust">Afidabilitât</string>
+    <string name="ssl_cert_dialog_trusted">La conession e je sigure</string>
     <string name="ssl_cert_dialog_domain">Domini</string>
     <string name="ssl_cert_dialog_issued_to">Dât fûr a</string>
     <string name="ssl_cert_dialog_issued_by">Dât fûr di</string>
@@ -94,6 +96,13 @@
     <string name="ssl_cert_dialog_issued_on">Dât fûr ai</string>
     <string name="ssl_cert_dialog_expires_on">Al scjât ai</string>
     <string name="ssl_cert_dialog_dismiss">Siere</string>
+    <string name="ssl_error_untrusted">Chest certificât nol rive di une autoriât atendibile.</string>
+    <string name="ssl_error_mismatch">Il non dal sît nol corispuint al non sul certificât.</string>
+    <string name="ssl_error_expired">Chest certificât al è scjadût.</string>
+    <string name="ssl_error_not_yet_valid">Chest certificât nol è ancjemò valit.</string>
+    <string name="ssl_error_date_invalid">Chest certificât al à une date no valide.</string>
+    <string name="ssl_error_invalid">Chest certificât nol è valit.</string>
+    <string name="ssl_error_unknown">Erôr di certificât no cognossût.</string>
     <string name="location_dialog_title">Furnî la posizion?</string>
     <string name="location_dialog_message">%1$s al vûl doprâ la tô posizion gjeografiche.</string>
     <string name="location_dialog_allow">Permet</string>
