@@ -41,7 +41,7 @@
     <string name="pref_looklock_title">LookLock</string>
     <string name="pref_looklock_summary">Evita qu\'otres aplicaciones llean el conteníu de Restolador</string>
     <string name="pref_js_title">JavaScript</string>
-    <string name="pref_js_summary">Activa JavaScript</string>
+    <string name="pref_js_summary">Activa\'l JavaScript</string>
     <string name="pref_location_title">Llocalización</string>
     <string name="pref_location_summary">Permite que los sitios web soliciten l\'accesu a la llocalización</string>
     <string name="pref_cookie_title">Cookies</string>
@@ -83,9 +83,11 @@
     <string name="suggestions_provider_none">Nengún</string>
     <string name="search_bar_hint">Buscar</string>
     <string name="ssl_cert_dialog_title">Detalles del certificáu SSL</string>
+    <string name="ssl_cert_dialog_trust">Enfotu</string>
+    <string name="ssl_cert_dialog_trusted">La conexón ye segura</string>
     <string name="ssl_cert_dialog_domain">Dominiu</string>
     <string name="ssl_cert_dialog_issued_to">Emitióse pa</string>
-    <string name="ssl_cert_dialog_issued_by">Emitíóse por</string>
+    <string name="ssl_cert_dialog_issued_by">Emitiéronlu</string>
     <string name="ssl_cert_dialog_validity">Periodu de validez</string>
     <string name="ssl_cert_dialog_common_name">Nome común (CN)</string>
     <string name="ssl_cert_dialog_organization">Organización (O)</string>
@@ -93,6 +95,13 @@
     <string name="ssl_cert_dialog_issued_on">Data d\'emisión</string>
     <string name="ssl_cert_dialog_expires_on">Data de caducidá</string>
     <string name="ssl_cert_dialog_dismiss">Escartar</string>
+    <string name="ssl_error_untrusted">Esti certificáu ye d\'una entidá que nun ye d\'enfotu.</string>
+    <string name="ssl_error_mismatch">El nome del sitiu nun concasa col del certificáu.</string>
+    <string name="ssl_error_expired">Esti certificáu caducó.</string>
+    <string name="ssl_error_not_yet_valid">Esti certificáu entá nun ye válidu.</string>
+    <string name="ssl_error_date_invalid">Esti certificáu tien una data que ye inválida.</string>
+    <string name="ssl_error_invalid">Esti certificáu ye inválidu.</string>
+    <string name="ssl_error_unknown">Error desconocíu del certificáu.</string>
     <string name="location_dialog_title">¿Quies fornir la llocalización?</string>
     <string name="location_dialog_message">«%1$s» quies usar la to llocalización xeográfica.</string>
     <string name="location_dialog_allow">Permitir</string>

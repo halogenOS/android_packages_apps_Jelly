@@ -5,16 +5,26 @@
 -->
 <resources>
     <string name="app_name">Böngésző</string>
+    <string name="url_bar_more">Továbbiak</string>
+    <string name="url_bar_search_cancel">A keresés leállítása</string>
+    <string name="url_bar_search_clear">A keresés törlése</string>
+    <string name="url_bar_search_previous">Előző</string>
+    <string name="url_bar_search_next">Következő</string>
+    <string name="menu_go_back">Visszalépés</string>
+    <string name="menu_go_forward">Továbblépés</string>
+    <string name="menu_refresh">Oldalfrissítés</string>
     <string name="menu_new_tab">Új fül</string>
     <string name="menu_incognito">Inkognitólap</string>
     <string name="menu_fav_add">Kedvencekhez ad</string>
     <string name="menu_share">Megosztás</string>
     <string name="menu_favorites">Kedvencek</string>
     <string name="menu_history">Előzmények</string>
+    <string name="menu_downloads">Letöltések</string>
     <string name="menu_shortcut">Parancsikon létrehozása</string>
     <string name="menu_settings">Beállítások</string>
     <string name="menu_download">Letöltés</string>
     <string name="menu_in_new_tab">Megnyitás új lapon</string>
+    <string name="menu_desktop_mode">Asztali mód</string>
     <string name="menu_search">Keresés az oldalon</string>
     <string name="menu_print">Nyomtatás</string>
     <string name="share_title">Küldés</string>
@@ -74,6 +84,8 @@
     <string name="suggestions_provider_none">Nincs</string>
     <string name="search_bar_hint">Keresés</string>
     <string name="ssl_cert_dialog_title">Az SSL-tanúsítvány részletei</string>
+    <string name="ssl_cert_dialog_trust">Trust</string>
+    <string name="ssl_cert_dialog_trusted">A kapcsolat biztonságos</string>
     <string name="ssl_cert_dialog_domain">Tartomány</string>
     <string name="ssl_cert_dialog_issued_to">Kiadva a következő számára</string>
     <string name="ssl_cert_dialog_issued_by">Kibocsájtó</string>
@@ -84,4 +96,16 @@
     <string name="ssl_cert_dialog_issued_on">Kiadva</string>
     <string name="ssl_cert_dialog_expires_on">Lejár</string>
     <string name="ssl_cert_dialog_dismiss">Elvetés</string>
+    <string name="ssl_error_untrusted">Ez a tanúsítvány nem hiteles tanúsítványkibocsátótól származik.</string>
+    <string name="ssl_error_mismatch">Az oldal neve nem egyezik a tanúsítványban szereplő névvel.</string>
+    <string name="ssl_error_expired">Ez a tanúsítvány lejárt.</string>
+    <string name="ssl_error_not_yet_valid">Ez a tanúsítvány még nem érvényes.</string>
+    <string name="ssl_error_date_invalid">Ez a tanúsítvány érvénytelen dátumú.</string>
+    <string name="ssl_error_invalid">Ez a tanúsítvány érvénytelen.</string>
+    <string name="ssl_error_unknown">Ismeretlen tanúsítványhiba.</string>
+    <string name="location_dialog_title">Megadja a helyszínt?</string>
+    <string name="location_dialog_message">%1$s akarja használni az Ön földrajzi helyét</string>
+    <string name="location_dialog_allow">Engedélyezés</string>
+    <string name="location_dialog_block">Blokkolás</string>
+    <string name="location_dialog_cancel">Tiltás csak most</string>
 </resources>

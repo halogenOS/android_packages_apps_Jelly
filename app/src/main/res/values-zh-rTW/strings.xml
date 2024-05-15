@@ -84,6 +84,8 @@
     <string name="suggestions_provider_none">無</string>
     <string name="search_bar_hint">搜尋</string>
     <string name="ssl_cert_dialog_title">SSL 憑證詳細資訊</string>
+    <string name="ssl_cert_dialog_trust">信任</string>
+    <string name="ssl_cert_dialog_trusted">連線安全</string>
     <string name="ssl_cert_dialog_domain">網域</string>
     <string name="ssl_cert_dialog_issued_to">發證對象：</string>
     <string name="ssl_cert_dialog_issued_by">發證來源：</string>
@@ -94,6 +96,13 @@
     <string name="ssl_cert_dialog_issued_on">發證時間：</string>
     <string name="ssl_cert_dialog_expires_on">有效期至：</string>
     <string name="ssl_cert_dialog_dismiss">忽略</string>
+    <string name="ssl_error_untrusted">這個憑證並非來自信任的授權單位。</string>
+    <string name="ssl_error_mismatch">網站名稱與憑證上的名稱不相符。</string>
+    <string name="ssl_error_expired">此憑證已過期</string>
+    <string name="ssl_error_not_yet_valid">此憑證尚未生效。</string>
+    <string name="ssl_error_date_invalid">此憑證日期無效。</string>
+    <string name="ssl_error_invalid">此憑證無效。</string>
+    <string name="ssl_error_unknown">未知的憑證錯誤。</string>
     <string name="location_dialog_title">提供位置？</string>
     <string name="location_dialog_message">%1$s 想要使用您的地理位置。</string>
     <string name="location_dialog_allow">允許</string>
