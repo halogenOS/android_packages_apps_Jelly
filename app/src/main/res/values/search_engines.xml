@@ -11,6 +11,7 @@
         <item>Brave</item>
         <item>DuckDuckGo</item>
         <item>Google</item>
+        <item>Startpage</item>
         <item>Yahoo</item>
         <item>Yandex</item>
     </string-array>
@@ -21,6 +22,7 @@
         <item>https://search.brave.com/search?q={searchTerms}</item>
         <item>https://duckduckgo.com/?q={searchTerms}</item>
         <item>https://google.com/search?ie=UTF-8&amp;source=android-browser&amp;q={searchTerms}</item>
+        <item>https://www.startpage.com/do/dsearch?q={searchTerms}</item>
         <item>https://search.yahoo.com/p={searchTerms}</item>
         <item>https://yandex.com/?q={searchTerms}</item>
     </string-array>

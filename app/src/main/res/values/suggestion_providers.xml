@@ -10,6 +10,7 @@
         <item>Brave</item>
         <item>DuckDuckGo</item>
         <item>Google</item>
+        <item>Startpage</item>
         <item>Yahoo</item>
         <item>@string/suggestions_provider_none</item>
     </string-array>
@@ -20,6 +21,7 @@
         <item>BRAVE</item>
         <item>DUCK</item>
         <item>GOOGLE</item>
+        <item>STARTPAGE</item>
         <item>YAHOO</item>
         <item>NONE</item>
     </string-array>
