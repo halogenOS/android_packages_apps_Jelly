@@ -65,6 +65,11 @@ sealed class SuggestionProvider(private val encoding: String) {
             "https://search.yahoo.com/sugg/chrome?output=fxjson&command=$query"
     }
 
+    data object Startpage : SuggestionProvider("UTF-8") {
+        override fun createQueryUrl(query: String, language: String) =
+	    "https://www.startpage.com/osuggestions?q=$query"
+    }
+
     data class History(private val historyRepository: HistoryRepository) :
         SuggestionProvider("UTF-8") {
         override fun createQueryUrl(query: String, language: String) = ""
