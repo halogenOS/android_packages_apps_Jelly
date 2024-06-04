@@ -50,6 +50,10 @@ enum class SuggestionProvider(private val encoding: String) {
             }
         }
     },
+    STARTPAGE("UTF-8") {
+        override fun createQueryUrl(query: String, language: String) =
+            "https://www.startpage.com/osuggestions?q=$query"
+    },
     GOOGLE("UTF-8") {
         override fun createQueryUrl(query: String, language: String) =
             "https://www.google.com/complete/search?client=android&oe=utf8&ie=utf8&cp=4&xssi=t&gs_pcrt=undefined&hl=$language&q=$query"
