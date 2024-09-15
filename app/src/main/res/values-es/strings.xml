@@ -5,16 +5,26 @@
 -->
 <resources>
     <string name="app_name">Navegador</string>
+    <string name="url_bar_more">Más</string>
+    <string name="url_bar_search_cancel">Cancelar búsqueda</string>
+    <string name="url_bar_search_clear">Borrar búsqueda</string>
+    <string name="url_bar_search_previous">Anterior</string>
+    <string name="url_bar_search_next">Siguiente</string>
+    <string name="menu_go_back">Regresar</string>
+    <string name="menu_go_forward">Avanzar</string>
+    <string name="menu_refresh">Actualizar página</string>
     <string name="menu_new_tab">Nueva pestaña</string>
     <string name="menu_incognito">Pestaña de incógnito</string>
     <string name="menu_fav_add">Añadir a favoritos</string>
     <string name="menu_share">Compartir</string>
     <string name="menu_favorites">Favoritos</string>
     <string name="menu_history">Historial</string>
+    <string name="menu_downloads">Descargas</string>
     <string name="menu_shortcut">Crear un acceso directo</string>
     <string name="menu_settings">Ajustes</string>
     <string name="menu_download">Descargar</string>
     <string name="menu_in_new_tab">Abrir en una nueva pestaña</string>
+    <string name="menu_desktop_mode">Modo de escritorio</string>
     <string name="menu_search">Encontrar en la página</string>
     <string name="menu_print">Imprimir</string>
     <string name="share_title">Enviar a</string>
@@ -53,6 +63,8 @@
     <string name="history_delete_message">Borrará todo el historial, esta acción no se puede deshacer. ¿Desea continuar?</string>
     <string name="history_delete_positive">Borrar</string>
     <string name="history_deleting_message">Borrando el historial\u2026</string>
+    <string name="history_snackbar_item_deleted">Entrada eliminada</string>
+    <string name="history_snackbar_item_deleted_message">Deshacer</string>
     <string name="favorite_title">Favoritos</string>
     <string name="favorite_added">Añadido a favoritos</string>
     <string name="favorite_empty">Nada por aquí, añada un enlace a favoritos para visualizarlo en esta pestaña</string>
@@ -72,6 +84,8 @@
     <string name="suggestions_provider_none">Ninguno</string>
     <string name="search_bar_hint">Buscar</string>
     <string name="ssl_cert_dialog_title">Detalles del certificado SSL</string>
+    <string name="ssl_cert_dialog_trust">Confiar</string>
+    <string name="ssl_cert_dialog_trusted">La conexión es segura</string>
     <string name="ssl_cert_dialog_domain">Dominio</string>
     <string name="ssl_cert_dialog_issued_to">Emitido para</string>
     <string name="ssl_cert_dialog_issued_by">Emitido por</string>
@@ -82,4 +96,16 @@
     <string name="ssl_cert_dialog_issued_on">Emitido el</string>
     <string name="ssl_cert_dialog_expires_on">Expira el</string>
     <string name="ssl_cert_dialog_dismiss">Descartar</string>
+    <string name="ssl_error_untrusted">Este certificado no es de una organización de confianza.</string>
+    <string name="ssl_error_mismatch">El nombre del sitio no coincide con el nombre en el certificado.</string>
+    <string name="ssl_error_expired">Este certificado ha caducado.</string>
+    <string name="ssl_error_not_yet_valid">Este certificado todavía no es válido.</string>
+    <string name="ssl_error_date_invalid">Este certificado tiene una fecha no válida.</string>
+    <string name="ssl_error_invalid">Este certificado no es válido.</string>
+    <string name="ssl_error_unknown">Error de certificado desconocido</string>
+    <string name="location_dialog_title">¿Proporcionar ubicación?</string>
+    <string name="location_dialog_message">%1$s quiere usar tu geolocalización.</string>
+    <string name="location_dialog_allow">Permitir</string>
+    <string name="location_dialog_block">Bloquear</string>
+    <string name="location_dialog_cancel">Denegar por ahora</string>
 </resources>
