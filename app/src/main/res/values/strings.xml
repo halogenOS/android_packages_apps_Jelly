@@ -159,7 +159,7 @@
     <string name="error_no_activity_found">No app can handle this link</string>
 
     <string name="default_search_engine" translatable="false">https://www.startpage.com/do/dsearch?q={searchTerms}</string>
-    <string name="default_home_page" translatable="false">https://www.startpage.com</string>
+    <string name="default_home_page" translatable="false">https://www.startpage.com/do/mypage.pl?prfe=8aae7f01911e66dc6e8036a92d368edd628c6094340ed3260390ab87f536ef80743fe7b271cbb99b835c0c08a4c0d0bb00971b15cff0820b0b2c43ec2edaa6ddb20a0d04e66c94ef94d054ce</string>
     <string name="default_suggestion_provider" translatable="false">STARTPAGE</string>
 
     <!-- Auth dialog: title -->
