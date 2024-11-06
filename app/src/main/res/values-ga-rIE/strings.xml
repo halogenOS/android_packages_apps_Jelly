@@ -4,6 +4,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
+    <string name="app_name">Brabhsálaí</string>
     <string name="url_bar_more">Tuilleadh</string>
     <string name="url_bar_search_cancel">Cealaigh an cuardach</string>
     <string name="url_bar_search_clear">Glan cuardach</string>
@@ -12,8 +13,19 @@
     <string name="menu_go_back">Dul ar ais</string>
     <string name="menu_go_forward">Dul ar aghaidh</string>
     <string name="menu_refresh">Athnuaigh leathanach</string>
+    <string name="menu_new_tab">Cluaisín nua</string>
+    <string name="menu_fav_add">Cuir le ceanáin</string>
     <string name="menu_downloads">Íoslódálacha</string>
     <string name="menu_desktop_mode">Suíomh deisce</string>
+    <string name="ssl_cert_dialog_trust">Muinín</string>
+    <string name="ssl_cert_dialog_trusted">Tá an nasc slán</string>
+    <string name="ssl_error_untrusted">Ní ó údarás iontaofa é an teastas seo.</string>
+    <string name="ssl_error_mismatch">Ní mheaitseálann ainm an tsuímh leis an ainm ar an teastas.</string>
+    <string name="ssl_error_expired">Tá an teastas seo imithe in éag.</string>
+    <string name="ssl_error_not_yet_valid">Níl an teastas seo bailí fós.</string>
+    <string name="ssl_error_date_invalid">Tá dáta neamhbhailí ag an teastas seo.</string>
+    <string name="ssl_error_invalid">Tá an teastas seo neamhbhailí.</string>
+    <string name="ssl_error_unknown">Earráid teastas anaithnid.</string>
     <string name="location_dialog_title">Suíomh a sholáthar?</string>
     <string name="location_dialog_message">Tá %1$s ag iarraidh do gheoshuíomh a úsáid.</string>
     <string name="location_dialog_allow">Ceadaigh</string>

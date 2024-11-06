@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -28,13 +28,13 @@ buildscript {
 }
 
 android {
-    compileSdk = 34
+    compileSdk = 35
     namespace = "org.lineageos.jelly"
 
     defaultConfig {
         applicationId = "org.lineageos.jelly"
         minSdk = 26
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -107,12 +107,9 @@ configure<GenerateBpPluginExtension> {
     targetSdk.set(android.defaultConfig.targetSdk!!)
     availableInAOSP.set { module: Module ->
         when {
-            module.group.startsWith("androidx") -> {
-                // We provide our own androidx.appcompat
-                !module.group.startsWith("androidx.appcompat")
-            }
-
+            module.group.startsWith("androidx") -> true
             module.group.startsWith("org.jetbrains") -> true
+            module.group == "com.google.android.material" -> true
             module.group == "com.google.auto.value" -> true
             module.group == "com.google.errorprone" -> true
             module.group == "com.google.guava" -> true
