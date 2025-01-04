@@ -13,7 +13,6 @@ import android.util.AttributeSet
 import android.util.Log
 import android.view.View
 import android.webkit.WebView
-import org.lineageos.jelly.js.JsSyncUrl
 import org.lineageos.jelly.ui.UrlBarLayout
 import org.lineageos.jelly.utils.SharedPreferencesExt
 import org.lineageos.jelly.utils.UrlUtils
@@ -50,7 +49,7 @@ class WebViewExt @JvmOverloads constructor(
         super.loadUrl(UrlUtils.getFormattedUri(templateUri, url), this.requestHeaders)
     }
 
-    private fun setup(urlBarLayout: UrlBarLayout) {
+    private fun setup() {
         settings.javaScriptEnabled = sharedPreferencesExt.javascriptEnabled
         settings.javaScriptCanOpenWindowsAutomatically = sharedPreferencesExt.javascriptEnabled
         settings.setGeolocationEnabled(sharedPreferencesExt.locationEnabled)
@@ -113,13 +112,6 @@ class WebViewExt @JvmOverloads constructor(
         if (sharedPreferencesExt.doNotTrackEnabled) {
             this.requestHeaders[HEADER_DNT] = "1"
         }
-
-        if (settings.javaScriptEnabled) {
-            addJavascriptInterface(
-                JsSyncUrl(urlBarLayout, activity),
-                JsSyncUrl.INTERFACE
-            )
-        }
     }
 
     fun init(
@@ -139,7 +131,7 @@ class WebViewExt @JvmOverloads constructor(
         urlBarLayout.onStartSearchCallback = { findAllAsync(it) }
         urlBarLayout.onClearSearchCallback = { clearMatches() }
         urlBarLayout.onSearchPositionChangeCallback = { findNext(it) }
-        setup(urlBarLayout)
+        setup()
     }
 
     val snap: Bitmap

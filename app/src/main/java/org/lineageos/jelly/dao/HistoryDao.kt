@@ -43,9 +43,6 @@ interface HistoryDao {
         }
     }
 
-    @Query("UPDATE history SET url = :newUrl, title = :title WHERE url = :url")
-    suspend fun replace(title: String, url: String, newUrl: String)
-
     @Query("DELETE FROM history WHERE _id = :id")
     suspend fun delete(id: Long)
 
