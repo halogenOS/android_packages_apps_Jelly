@@ -13,6 +13,7 @@ import android.util.AttributeSet
 import android.util.Log
 import android.view.View
 import android.webkit.WebView
+import org.lineageos.jelly.js.JsSyncUrl
 import org.lineageos.jelly.ui.UrlBarLayout
 import org.lineageos.jelly.utils.SharedPreferencesExt
 import org.lineageos.jelly.utils.UrlUtils
@@ -49,7 +50,7 @@ class WebViewExt @JvmOverloads constructor(
         super.loadUrl(UrlUtils.getFormattedUri(templateUri, url), this.requestHeaders)
     }
 
-    private fun setup() {
+    private fun setup(urlBarLayout: UrlBarLayout) {
         settings.javaScriptEnabled = sharedPreferencesExt.javascriptEnabled
         settings.javaScriptCanOpenWindowsAutomatically = sharedPreferencesExt.javascriptEnabled
         settings.setGeolocationEnabled(sharedPreferencesExt.locationEnabled)
@@ -90,17 +91,19 @@ class WebViewExt @JvmOverloads constructor(
             activity.downloadFileAsk(url, userAgent, contentDisposition, mimeType, contentLength)
         }
 
-        // Mobile: Remove "wv" from the WebView's user agent. Some websites don't work
-        // properly if the browser reports itself as a simple WebView.
+        // Mobile: Remove "wv" and "Version/4.0" from the WebView's user agent.
+        // Some websites don't work properly if the browser reports itself as a simple WebView.
         // Desktop: Generate the desktop user agent starting from the mobile one so that
         // we always report the current engine version.
         val pattern = Pattern.compile("([^)]+ \\()([^)]+)(\\) .*)")
         val matcher = pattern.matcher(settings.userAgentString)
         if (matcher.matches()) {
             val mobileDevice = matcher.group(2)!!.replace("; wv", "")
-            mobileUserAgent = matcher.group(1)!! + mobileDevice + matcher.group(3)
+            mobileUserAgent = matcher.group(1)!! + mobileDevice + matcher.group(3)!!
+                .replace(" Version/4.0 ", " ")
             desktopUserAgent = matcher.group(1)!! + DESKTOP_DEVICE + matcher.group(3)!!
                 .replace(" Mobile ", " ")
+                .replace(" Version/4.0 ", " ")
             settings.userAgentString = mobileUserAgent
         } else {
             Log.e(TAG, "Couldn't parse the user agent")
@@ -110,6 +113,13 @@ class WebViewExt @JvmOverloads constructor(
         if (sharedPreferencesExt.doNotTrackEnabled) {
             this.requestHeaders[HEADER_DNT] = "1"
         }
+
+        if (settings.javaScriptEnabled) {
+            addJavascriptInterface(
+                JsSyncUrl(urlBarLayout, activity),
+                JsSyncUrl.INTERFACE
+            )
+        }
     }
 
     fun init(
@@ -118,7 +128,7 @@ class WebViewExt @JvmOverloads constructor(
         this.activity = activity
         isIncognito = incognito
         val chromeClient = ChromeClient(
-            activity, incognito, urlBarLayout
+            activity, incognito, urlBarLayout, sharedPreferencesExt
         )
         webChromeClient = chromeClient
         webViewClient = WebClient(urlBarLayout)
@@ -129,7 +139,7 @@ class WebViewExt @JvmOverloads constructor(
         urlBarLayout.onStartSearchCallback = { findAllAsync(it) }
         urlBarLayout.onClearSearchCallback = { clearMatches() }
         urlBarLayout.onSearchPositionChangeCallback = { findNext(it) }
-        setup()
+        setup(urlBarLayout)
     }
 
     val snap: Bitmap
@@ -164,7 +174,7 @@ class WebViewExt @JvmOverloads constructor(
         private const val TAG = "WebViewExt"
         private const val DESKTOP_DEVICE = "X11; Linux x86_64"
         private const val DESKTOP_USER_AGENT_FALLBACK =
-            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2049.0 Safari/537.36"
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
         private const val HEADER_DNT = "DNT"
     }
 }

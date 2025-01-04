@@ -41,6 +41,8 @@
     <string name="pref_privacy_security">Adatvédelem és biztonság</string>
     <string name="pref_looklock_title">LookLock</string>
     <string name="pref_looklock_summary">Más alkalmazások ne olvashassák be a böngésző tartalmát</string>
+    <string name="pref_dynamic_popup_title">Dinamikus felugrók</string>
+    <string name="pref_dynamic_popup_summary">Engedélyezi, hogy a JavaScript, a felhasználó beavatkozása nélkül nyissa meg a felugró ablakokat</string>
     <string name="pref_js_title">JavaScript</string>
     <string name="pref_js_summary">JavaScript engedélyezése</string>
     <string name="pref_location_title">Hely</string>
