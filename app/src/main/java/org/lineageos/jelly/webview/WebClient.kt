@@ -33,6 +33,7 @@ import com.google.android.material.snackbar.Snackbar
 import org.lineageos.jelly.R
 import org.lineageos.jelly.js.JsManifest
 import org.lineageos.jelly.js.JsMediaSession
+import org.lineageos.jelly.js.JsShare
 import org.lineageos.jelly.js.JsSyncUrl
 import org.lineageos.jelly.ui.UrlBarLayout
 import org.lineageos.jelly.utils.AssetLoader
@@ -40,17 +41,27 @@ import org.lineageos.jelly.utils.IntentUtils
 import org.lineageos.jelly.utils.UrlUtils
 import java.net.URISyntaxException
 
-internal class WebClient(private val urlBarLayout: UrlBarLayout) : WebViewClient() {
+internal class WebClient(
+    private val context: Context,
+    private val urlBarLayout: UrlBarLayout,
+) : WebViewClient() {
+    private val scripts by lazy {
+        val mediaSessionAPI = AssetLoader.loadAsset(
+            context.resources,
+            "MediaSessionAPI.js",
+        )
+        buildString {
+            appendLine(mediaSessionAPI)
+            appendLine(JsMediaSession.SCRIPT)
+            appendLine(JsShare.SCRIPT)
+        }
+    }
+
     override fun onPageStarted(view: WebView, url: String, favicon: Bitmap?) {
         super.onPageStarted(view, url, favicon)
         urlBarLayout.onPageLoadStarted(url)
         if (view.settings.javaScriptEnabled) {
-            val mediaSessionAPI = AssetLoader.loadAsset(
-                view.context.resources,
-                "MediaSessionAPI.js"
-            )
-            view.evaluateJavascript(mediaSessionAPI, null)
-            view.evaluateJavascript(JsMediaSession.SCRIPT, null)
+            view.evaluateJavascript(scripts, null)
         }
     }
 

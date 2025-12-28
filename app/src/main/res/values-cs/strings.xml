@@ -10,6 +10,7 @@
     <string name="url_bar_search_clear">Vyčistit vyhledávání</string>
     <string name="url_bar_search_previous">Předchozí</string>
     <string name="url_bar_search_next">Další</string>
+    <string name="url_bar_auto_complete_hint">Hledat nebo zadat URL adresu</string>
     <string name="menu_go_back">Zpět</string>
     <string name="menu_go_forward">Následující</string>
     <string name="menu_refresh">Obnovit stránku</string>
@@ -21,6 +22,7 @@
     <string name="menu_history">Historie</string>
     <string name="menu_downloads">Stažené</string>
     <string name="menu_shortcut">Přidat zástupce</string>
+    <string name="menu_background_shortcuts">Zkratky na pozadí</string>
     <string name="menu_settings">Nastavení</string>
     <string name="menu_download">Stáhnout</string>
     <string name="menu_in_new_tab">Otevřít na nové kartě</string>
@@ -32,15 +34,28 @@
     <string name="download_title">Stáhnout soubor</string>
     <string name="download_message">Chcete stáhnout %1$s?</string>
     <string name="download_positive">Stáhnout</string>
+    <string name="background_shortcuts_title">Zkratky na pozadí</string>
+    <string name="background_shortcuts_save_action">Uložit</string>
+    <string name="background_shortcuts_notification_channel">Správa zkratek na pozadí</string>
+    <plurals name="background_shortcuts_notification_content">
+        <item quantity="one">%1$d instance je spuštěna</item>
+        <item quantity="few">%1$d instance jsou spuštěny</item>
+        <item quantity="many">%1$d instancí je spuštěno</item>
+        <item quantity="other">%1$d instancí je spuštěno</item>
+    </plurals>
     <string name="settings_title">Nastavení</string>
     <string name="pref_search_engine">Vyhledávač</string>
     <string name="pref_start_page">Domovská stránka</string>
+    <string name="pref_start_page_autoload_enabled">Povoleno</string>
+    <string name="pref_start_page_autoload_disabled">Zakázáno</string>
     <string name="pref_start_page_dialog_title">Vybrat domovskou stránku</string>
     <string name="pref_start_page_dialog_message">Napište URL domovské stránky</string>
     <string name="pref_start_page_dialog_reset">Resetovat</string>
     <string name="pref_privacy_security">Soukromí a zabezpečení</string>
     <string name="pref_looklock_title">LookLock</string>
     <string name="pref_looklock_summary">Zabránit ostatním aplikacím čtení obsahu z prohlížeče</string>
+    <string name="pref_dynamic_popup_title">Dynamická vyskakovací okna</string>
+    <string name="pref_dynamic_popup_summary">Povolit JavaScriptu otevírat vyskakovací okna bez interakce uživatele</string>
     <string name="pref_js_title">JavaScript</string>
     <string name="pref_js_summary">Povolit JavaScript</string>
     <string name="pref_location_title">Poloha</string>
@@ -109,4 +124,8 @@
     <string name="location_dialog_allow">Povolit</string>
     <string name="location_dialog_block">Blokovat</string>
     <string name="location_dialog_cancel">Prozatím odmítnout</string>
+    <string name="protected_media_dialog_message">Povolit chráněná média?</string>
+    <string name="protected_media_dialog_grant">Povolit</string>
+    <string name="protected_media_dialog_deny">Odepřít</string>
+    <string name="media_session_destroy_action">Zastavit</string>
 </resources>

@@ -48,7 +48,7 @@
     <string name="pref_start_page_autoload_disabled">Desativado</string>
     <string name="pref_start_page_dialog_title">Selecionar página inicial</string>
     <string name="pref_start_page_dialog_message">Digite o URL da página inicial</string>
-    <string name="pref_start_page_dialog_reset">Redefinir</string>
+    <string name="pref_start_page_dialog_reset">Reconfigurar</string>
     <string name="pref_privacy_security">Privacidade e segurança</string>
     <string name="pref_looklock_title">LookLock</string>
     <string name="pref_looklock_summary">Impedir que outros apps leiam o conteúdo do navegador</string>
@@ -92,7 +92,7 @@
     <string name="auth_dialog_username">Nome de usuário:</string>
     <string name="auth_dialog_password">Senha:</string>
     <string name="auth_dialog_detail">%1$s exige um nome de usuário e senha.</string>
-    <string name="auth_dialog_login">Iniciar sessão</string>
+    <string name="auth_dialog_login">Conectar-se</string>
     <string name="shortcut_new_incognito_tab">Nova aba anônima</string>
     <string name="suggestions_provider_history">Histórico</string>
     <string name="suggestions_provider_none">Nenhum</string>

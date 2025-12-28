@@ -44,6 +44,9 @@ android_app {
         "androidx.recyclerview_recyclerview",
         "androidx.room_room-ktx",
         "androidx.room_room-runtime",
+        "androidx.room_room-runtime",
+        "androidx.sqlite_sqlite",
+        "androidx.sqlite_sqlite-framework",
         "androidx.transition_transition",
         "com.google.android.material_material",
         "kotlin-stdlib",
@@ -51,7 +54,7 @@ android_app {
         "kotlinx-coroutines-core",
     ],
 
-    sdk_version: "35",
+    sdk_version: "36",
 
     optimize: {
         optimize: true,

@@ -17,6 +17,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import org.lineageos.jelly.R
 import org.lineageos.jelly.js.JsManifest
 import org.lineageos.jelly.js.JsMediaSession
+import org.lineageos.jelly.js.JsShare
 import org.lineageos.jelly.js.JsSyncUrl
 import org.lineageos.jelly.shortcut.BackgroundShortcut
 import org.lineageos.jelly.shortcut.BackgroundShortcutService
@@ -143,6 +144,10 @@ class WebViewExt @JvmOverloads constructor(
                 JsMediaSession(this),
                 JsMediaSession.INTERFACE
             )
+            addJavascriptInterface(
+                JsShare(activity),
+                JsShare.INTERFACE
+            )
         }
     }
 
@@ -156,7 +161,7 @@ class WebViewExt @JvmOverloads constructor(
             activity, incognito, urlBarLayout, sharedPreferencesExt
         )
         webChromeClient = chromeClient
-        webViewClient = WebClient(urlBarLayout)
+        webViewClient = WebClient(activity, urlBarLayout)
         setFindListener { activeMatchOrdinal, numberOfMatches, _ ->
             urlBarLayout.searchPositionInfo = Pair(activeMatchOrdinal, numberOfMatches)
         }

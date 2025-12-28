@@ -3,90 +3,83 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.lineageos.generatebp.GenerateBpPluginExtension
 import org.lineageos.generatebp.models.Module
 
 plugins {
-    id("com.android.application")
-    id("kotlin-android")
-    id("org.jetbrains.kotlin.kapt")
-    id("org.lineageos.generatebp")
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.kapt)
+    alias(libs.plugins.lineageos.generatebp)
 }
 
 android {
-    compileSdk = 35
     namespace = "org.lineageos.jelly"
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "org.lineageos.jelly"
         minSdk = 26
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
-
-        kapt {
-            arguments {
-                arg("room.schemaLocation", "$projectDir/schemas")
-            }
-        }
     }
 
     buildTypes {
-        getByName("release") {
+        release {
             // Enables code shrinking, obfuscation, and optimization.
             isMinifyEnabled = true
 
             // Enables resource shrinking.
             isShrinkResources = true
 
-            // Includes the default ProGuard rules files.
-            setProguardFiles(
-                listOf(
-                    getDefaultProguardFile("proguard-android-optimize.txt"),
-                    "proguard-rules.pro"
-                )
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
             )
         }
-        getByName("debug") {
+
+        debug {
             // Append .dev to package name so we won't conflict with AOSP build.
             applicationIdSuffix = ".dev"
         }
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
-        jvmTarget = "1.8"
+    kotlin {
+        compilerOptions {
+            jvmTarget.set(JvmTarget.JVM_17)
+        }
+    }
+}
+
+kapt {
+    arguments {
+        arg("room.schemaLocation", "$projectDir/schemas")
     }
 }
 
 dependencies {
-    // Align versions of all Kotlin components
-    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
-
-    implementation("androidx.core:core-ktx:1.10.1")
-    implementation("androidx.annotation:annotation:1.6.0")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("androidx.cardview:cardview:1.0.0")
-    implementation("androidx.palette:palette:1.0.0")
-    implementation("androidx.preference:preference:1.2.0")
-    implementation("androidx.recyclerview:recyclerview:1.3.0")
-    implementation("androidx.transition:transition:1.4.1")
-    implementation("com.google.android.material:material:1.9.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1")
-
-    val roomVersion = "2.6.1"
-
-    implementation("androidx.room:room-runtime:$roomVersion")
-    annotationProcessor("androidx.room:room-compiler:$roomVersion")
-    kapt("androidx.room:room-compiler:$roomVersion")
-
-    // Kotlin Extensions and Coroutines support for Room
-    implementation("androidx.room:room-ktx:$roomVersion")
+    implementation(libs.androidx.annotation)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.cardview)
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.palette)
+    implementation(libs.androidx.preference)
+    implementation(libs.androidx.recyclerview)
+    annotationProcessor(libs.androidx.room.compiler)
+    kapt(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.ktx)
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.transition)
+    implementation(libs.material)
+    implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.kotlinx.coroutines.core)
 }
 
 configure<GenerateBpPluginExtension> {
